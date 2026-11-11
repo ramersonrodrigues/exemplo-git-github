@@ -1,0 +1,81 @@
+/* ==========================================================================
+   COMPONENTE: CURIOSIDADES FASCINANTES (FACTS)
+   Estilos dos cards informativos de curiosidades sobre gatos
+   ========================================================================== */
+
+.facts-section {
+  padding: 0 var(--margin-x) var(--space-lg);
+}
+
+.section-deco-icon {
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  font-variation-settings: 'FILL' 1;
+}
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.6rem;
+}
+
+.fact-item {
+  background: var(--color-surface-container-low);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.45rem;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.fact-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.fact-icon-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.fact-bg-1 {
+  background: var(--color-secondary-fixed);
+  color: #4a2515;
+}
+
+.fact-bg-2 {
+  background: var(--color-tertiary-fixed);
+  color: #233523;
+}
+
+.fact-bg-3 {
+  background: var(--color-primary-fixed);
+  color: #6e2510;
+}
+
+.fact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.fact-title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-on-surface);
+  line-height: 1.25;
+}
+
+.fact-subtitle {
+  font-size: 0.7rem;
+  color: var(--color-on-surface-variant);
+  margin-top: 0.15rem;
+  line-height: 1.3;
+}

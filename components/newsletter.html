@@ -1,0 +1,46 @@
+<!-- ===================================================================
+     COMPONENTE: NEWSLETTER / CLUBE DO BIGODE
+     Descrição: Cartão de inscrição com formulário de e-mail e feedback
+     =================================================================== -->
+<section class="newsletter-section">
+  <div class="newsletter-card">
+    
+    <div class="newsletter-header">
+      <div class="newsletter-icon-box">
+        <span class="material-symbols-outlined">mark_email_read</span>
+      </div>
+      <div class="newsletter-title-box">
+        <span class="newsletter-eyebrow">Comunidade VIP</span>
+        <h3 class="newsletter-title">Clube do Bigode</h3>
+      </div>
+    </div>
+
+    <p class="newsletter-description">
+      Receba toda quinta-feira dicas veterinárias, receitas caseiras de petiscos e mimos exclusivos para o seu melhor amigo.
+    </p>
+
+    <!-- Formulário de cadastro de e-mail -->
+    <form class="newsletter-form" id="newsletterForm" novalidate>
+      <div class="input-group">
+        <input 
+          type="email" 
+          id="newsletterEmail" 
+          class="newsletter-input" 
+          placeholder="Seu melhor e-mail..." 
+          required 
+        />
+      </div>
+      <button type="submit" class="btn btn-primary newsletter-btn">
+        <span>Participar</span>
+        <span class="material-symbols-outlined btn-icon">send</span>
+      </button>
+    </form>
+
+    <!-- Mensagem de feedback de sucesso (inicialmente oculta) -->
+    <div class="newsletter-feedback hidden" id="newsletterFeedback">
+      <span class="material-symbols-outlined feedback-icon">check_circle</span>
+      <span class="feedback-text">Prontinho! Seu convite foi enviado com sucesso. Ronrons a caminho!</span>
+    </div>
+
+  </div>
+</section>

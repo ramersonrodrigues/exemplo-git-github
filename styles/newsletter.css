@@ -1,0 +1,117 @@
+/* ==========================================================================
+   COMPONENTE: NEWSLETTER / CLUBE DO BIGODE
+   Estilos do cartão de inscrição e formulário de e-mail
+   ========================================================================== */
+
+.newsletter-section {
+  padding: 0 var(--margin-x) var(--space-xl);
+}
+
+.newsletter-card {
+  background: linear-gradient(135deg, var(--color-surface-container) 0%, var(--color-surface-container-high) 100%);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border: 1px solid rgba(219, 193, 185, 0.4);
+}
+
+.newsletter-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.newsletter-icon-box {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-full);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  box-shadow: 0 3px 10px rgba(150, 67, 40, 0.25);
+}
+
+.newsletter-title-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-eyebrow {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.newsletter-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-on-surface);
+  line-height: 1.2;
+}
+
+.newsletter-description {
+  font-size: 0.85rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.5;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  margin-top: 0.25rem;
+}
+
+.newsletter-input {
+  width: 100%;
+  height: 2.9rem;
+  padding: 0 1rem;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-surface-container-lowest);
+  color: var(--color-on-surface);
+  font-family: inherit;
+  font-size: 0.88rem;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.04);
+  transition: box-shadow var(--transition-fast);
+}
+
+.newsletter-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(150, 67, 40, 0.45);
+}
+
+.newsletter-btn {
+  height: 2.9rem;
+  width: 100%;
+}
+
+/* Feedback de sucesso do formulário */
+.newsletter-feedback {
+  padding: 0.75rem;
+  border-radius: var(--radius-md);
+  background: rgba(78, 97, 77, 0.18);
+  color: var(--color-tertiary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.feedback-icon {
+  font-size: 1.1rem;
+  color: var(--color-tertiary);
+}
+
+.hidden {
+  display: none !important;
+}

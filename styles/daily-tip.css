@@ -1,0 +1,92 @@
+/* ==========================================================================
+   COMPONENTE: DICA DO DIA (DAILY TIP)
+   Estilos do cartão informativo diário com destaque visual
+   ========================================================================== */
+
+.daily-tip-section {
+  padding: 0 var(--margin-x) var(--space-lg);
+}
+
+.tip-card {
+  background: var(--color-surface-container-lowest);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(219, 193, 185, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tip-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tip-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full);
+  background: var(--color-tertiary-fixed);
+  color: #1e3220;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.tip-read-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--color-on-surface-variant);
+}
+
+.tip-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.tip-title {
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--color-on-surface);
+}
+
+.tip-description {
+  font-size: 0.88rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.55;
+}
+
+.tip-highlight-box {
+  margin-top: 0.25rem;
+  padding: 0.75rem;
+  background: rgba(78, 97, 77, 0.09);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+
+.highlight-icon {
+  color: var(--color-tertiary);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+
+.highlight-text {
+  font-size: 0.82rem;
+  color: var(--color-on-surface-variant);
+  line-height: 1.45;
+}
+
+.highlight-text strong {
+  color: var(--color-on-surface);
+  font-weight: 700;
+}
